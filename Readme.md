@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Зияуддин Асланов](https://up.htmlacademy.ru/htmlcss/31/user/1334499).
-* Наставник: `Неизвестно`.
+- Студент: [Зияуддин Асланов](https://up.htmlacademy.ru/htmlcss/31/user/1334499).
+- Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
