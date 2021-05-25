@@ -25,10 +25,13 @@
 
 <section>
   <h2>Фильтрация</h2>
-  <h3>Стоимость:</h3>
-  <form method="get" action="https://echo.htmlacademy.ru">
-  от <input type="text" value="0">
-  до <input type="text" value="15 000">
+  <fieldset>
+  <legend>Стоимость:</legend>
+  <input type="range" min="0" max="15000" step="1" value="50">
+  <br>
+  от <input type="number" value="0">
+  до <input type="number" value="15000">
+  </fieldset>
     <fieldset>
     <legend>Сетка:</legend>
     <ul>
@@ -72,26 +75,25 @@
      </ul>
    </fieldset>
       <button type="submit">ПОКАЗАТЬ</button>
-  </form>
 </section>
 <section>
   <h2>Список цен</h2>
-  <h3>Сортировать:</h3>
+  <p>Сортировать:</p>
   <ul>
     <li>
-      По цене
+      <a href="catalog.html">По цене</a>
     </li>
     <li>
-      По типу
+      <a href="catalog.html">По типу</a>
     </li>
     <li>
-      По названию
+      <a href="catalog.html">По названию</a>
     </li>
   </ul>
   <ul>
     <li>
     <a href="https://up.htmlacademy.ru/htmlcss/31/project/sedona">
-      <h3>Sedona</h3>
+      <p>Sedona</p>
       Информационный сайт для туристов
       <p>
         <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого Седона">
@@ -103,7 +105,7 @@
     </li>
     <li>
       <a href="https://www.pinkfloyd.com/home.php">
-        <h3>PINK</h3>
+        <p>PINK</p>
         <p>
           <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого Пинк">
         </p>
@@ -111,7 +113,7 @@
      </li>
      <li>
       <a href="https://up.htmlacademy.ru/htmlcss/31/project/barbershop">
-        <h3>Borodinski</h3>
+        <p>Borodinski</p>
         <p>
           <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого барбершопа">
         </p>
@@ -119,7 +121,7 @@
      </li>
      <li>
       <a href="catalog.html">
-        <h3>Mishka</h3>
+        <p>Mishka</p>
         <p>
           <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого мишка">
         </p>
@@ -127,7 +129,7 @@
      </li>
      <li>
       <a href="catalog.html">
-        <h3>Курсы</h3>
+        <p>Курсы</p>
         <p>
           <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого УЗ">
         </p>
@@ -135,7 +137,7 @@
      </li>
      <li>
       <a href="catalog.html">
-        <h3>КВАСТ</h3>
+        <p>КВАСТ</p>
         <p>
           <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Лого кваст">
         </p>
@@ -153,7 +155,7 @@
       <a href="#">3</a>
     </li>
     <li>
-      <button type="button">Следующая</button>
+      <a href="#">Следующая</a>
     </li>
   </ul>
 </section>
