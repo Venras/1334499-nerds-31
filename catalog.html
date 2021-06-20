@@ -1,185 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body>
-<header>
-  <nav>
-  <a href="index.html">
-    <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип компании Нёрдс">
-  </a>
-  <ul>
-   <li><a href="blank.html">Студия</a></li>
-   <li><a href="blank.html">Клиенты</a></li>
-   <li><a href="catalog.html">Магазин</a></li>
-   <li><a href="blank.html">Контакты</a></li>
-  </ul>
-  <a href="blank.html">Корзина</a>
-  </nav>
-</header>
 
-<main>
-  <h1>Магазин готовых шаблонов</h1>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
 
-<section>
-  <h2>Фильтрация</h2>
-  <fieldset>
-  <legend>Стоимость:</legend>
-  <input type="range" min="0" max="15000" step="1" value="50">
-  <br>
-  от <input type="number" value="0">
-  до <input type="number" value="15000">
-  </fieldset>
-    <fieldset>
-    <legend>Сетка:</legend>
-    <ul>
-      <li>
-        <input type="radio" name="grid-filter" id="filter-adapt" value="Adaptive" checked>
-        <label for="filter-adapt">Адаптивная</label>
-      </li>
-      <li>
-        <input type="radio" name="grid-filter" id="filter-fixed" value="Fix">
-        <label for="filter-fixed">Фиксированная</label>
-      </li>
-      <li>
-        <input type="radio" name="grid-filter" id="filter-rubber" value="Rub">
-        <label for="filter-rubber">Резиновая</label>
-      </li>
-    </ul>
-   </fieldset>
-   <fieldset>
-     <legend>Особенности:</legend>
-     <ul>
-       <li>
-         <input type="checkbox" name="slider" id="slide-option" checked>
-         <label for="slide-option">Слайдер</label>
-       </li>
-       <li>
-        <input type="checkbox" name="advantages" id="advantages-option">
-        <label for="advantages-option">Блок преимуществ</label>
-      </li>
-      <li>
-        <input type="checkbox" name="news" id="news-option" checked>
-        <label for="news-option">Новости</label>
-      </li>
-      <li>
-        <input type="checkbox" name="gallery" id="gallery-option">
-        <label for="gallery-option">Галерея</label>
-      </li>
-      <li>
-        <input type="checkbox" name="basket" id="basket-option">
-        <label for="basket-option">Корзина</label>
-      </li>
-     </ul>
-   </fieldset>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип компании Нёрдс">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section>
+      <h2>Фильтрация</h2>
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <input type="range" min="0" max="15000" step="1" value="50">
+        <br>
+        от <input type="number" value="0">
+        до <input type="number" value="15000">
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="grid-filter" id="filter-adapt" value="Adaptive" checked>
+            <label for="filter-adapt">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-filter" id="filter-fixed" value="Fix">
+            <label for="filter-fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="grid-filter" id="filter-rubber" value="Rub">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="slider" id="slide-option" checked>
+            <label for="slide-option">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages" id="advantages-option">
+            <label for="advantages-option">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="news-option" checked>
+            <label for="news-option">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="gallery-option">
+            <label for="gallery-option">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="basket-option">
+            <label for="basket-option">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
       <button type="submit">ПОКАЗАТЬ</button>
-</section>
-<section>
-  <h2>Список цен</h2>
-  <p>Сортировать:</p>
-  <ul>
-    <li>
-      <a href="catalog.html">По цене</a>
-    </li>
-    <li>
-      <a href="catalog.html">По типу</a>
-    </li>
-    <li>
-      <a href="catalog.html">По названию</a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-    <a href="https://up.htmlacademy.ru/htmlcss/31/project/sedona">
-      <p>Sedona</p>
-      Информационный сайт для туристов
+    </section>
+    <section>
+      <h2>Список цен</h2>
+      <p>Сортировать:</p>
+      <ul>
+        <li>
+          <a href="catalog.html">По цене</a>
+        </li>
+        <li>
+          <a href="catalog.html">По типу</a>
+        </li>
+        <li>
+          <a href="catalog.html">По названию</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://up.htmlacademy.ru/htmlcss/31/project/sedona">
+            <p>Sedona</p>
+            Информационный сайт для туристов
+            <p>
+              <img src="img/img-sedona1.jpg" width="359" height="578" alt="скриншот проекта Седона">
+            </p>
+          </a>
+          <p>
+            <button type="button">9 900 ₽</button>
+          </p>
+        </li>
+        <li>
+          <a href="https://www.pinkfloyd.com/home.php">
+            <p>PINK</p>
+            <p>
+              <img src="img/img-pink1.jpg" width="359" height="578" alt="скриншот проекта Пинк">
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://up.htmlacademy.ru/htmlcss/31/project/barbershop">
+            <p>Borodinski</p>
+            <p>
+              <img src="img/img-barbershop1.jpg" width="359" height="578" alt="скриншот проекта барбершопа">
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <p>Mishka</p>
+            <p>
+              <img src="img/img-mishka1.jpg" width="359" height="578" alt="скриншот проекта мишка">
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <p>Курсы</p>
+            <p>
+              <img src="img/img-aplus1.jpg" width="359" height="578" alt="скриншот проекта А+">
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <p>КВАСТ</p>
+            <p>
+              <img src="img/img-kvast1.jpg" width="359" height="578" alt="скриншот проекта кваст">
+            </p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Контактная информация</h2>
+      <a
+        href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.317576%2C59.968261&z=17">
+        <img src="img/map1.png" width="1440" height="416" alt="Расположение на карте">
+      </a>
+      <p>NЁRDS DESIGN STUDIO</p>
       <p>
-        <img src="img/img-sedona 1.jpg" width="359" height="578" alt="скриншот проекта Седона">
+        наб. Реки Карповки,
+        <br>5 лит П, Санкт-Петербург
       </p>
-    </a>
       <p>
-        <button type="button">9 900 ₽</button>
+        +7 800 555-86-28
       </p>
-    </li>
-    <li>
-      <a href="https://www.pinkfloyd.com/home.php">
-        <p>PINK</p>
-        <p>
-          <img src="img/img-pink 1.jpg" width="359" height="578" alt="скриншот проекта Пинк">
-        </p>
-      </a>
-     </li>
-     <li>
-      <a href="https://up.htmlacademy.ru/htmlcss/31/project/barbershop">
-        <p>Borodinski</p>
-        <p>
-          <img src="img/img-barbershop 1.jpg" width="359" height="578" alt="скриншот проекта барбершопа">
-        </p>
-      </a>
-     </li>
-     <li>
-      <a href="catalog.html">
-        <p>Mishka</p>
-        <p>
-          <img src="img/img-mishka 1.jpg" width="359" height="578" alt="скриншот проекта мишка">
-        </p>
-      </a>
-     </li>
-     <li>
-      <a href="catalog.html">
-        <p>Курсы</p>
-        <p>
-          <img src="img/img-aplus 1.jpg" width="359" height="578" alt="скриншот проекта А+">
-        </p>
-      </a>
-     </li>
-     <li>
-      <a href="catalog.html">
-        <p>КВАСТ</p>
-        <p>
-          <img src="img/img-kvast 1.jpg" width="359" height="578" alt="скриншот проекта кваст">
-        </p>
-      </a>
-     </li>
-  </ul>
-  <ul>
-    <li>
-      <a>1</a>
-    </li>
-    <li>
-      <a href="#">2</a>
-    </li>
-    <li>
-      <a href="#">3</a>
-    </li>
-    <li>
-      <a href="#">Следующая</a>
-    </li>
-  </ul>
-</section>
-<section>
-  <h2>Контактная информация</h2>
-  <a href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.317576%2C59.968261&z=17">
-    <img src="img/map 1.png" width="1440" height="416" alt="Расположение на карте">
-  </a>
-  <p>NЁRDS DESIGN STUDIO</p>
-  <p>
-    наб. Реки Карповки,
-    <br>5 лит П, Санкт-Петербург
-  </p>
-  <p>
-    +7 800 555-86-28
-  </p>
-  <a href="blank.html">Напишите нам</a>
-</section>
-</main>
+      <a href="blank.html">Напишите нам</a>
+    </section>
+  </main>
 
-<footer>
+  <footer>
     <h2>Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
     <ul>
@@ -195,4 +198,5 @@
     </ul>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,238 @@
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark: #a6a6a6;
+  --basic-neutral: #c1c1c1;
+  --basic-extra-light: #eeeeee;
+  --basic-white: #ffffff;
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-gold: #efc849;
+  --basic-dark-gray: #666666;
+
+  --special-less-red: #e74246;
+  --special-dark-red: #d7373b;
+  --special-less-green: #00bc6c;
+  --special-dark-green: #00aa62;
+  --special-less-gold: #eab534;
+  --special-dark-gold: #e5a722;
+}
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+  background-color: var(--basic-white);
+}
+
+.main-header-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-extra-light);
+}
+
+.main-header-logo {
+  border: none;
+}
+
+.main-header-logo:hover {
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+}
+
+.main-header-logo:focus {
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.site-navigation,
+.nav-button:not([href]) {
+  list-style: none;
+  text-decoration: none;
+}
+
+.user-nav-basket {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation .nav-button:hover,
+.user-nav-basket:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation .nav-button:focus,
+.user-nav-basket:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-more {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  height: 50px;
+  width: 240px;
+}
+
+.button-more:hover {
+  background-color: #e74246;
+}
+
+.button-more:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.button-sites {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  height: 50px;
+  width: 160px;
+}
+
+.button-sites:hover {
+  background-color: #e74246;
+}
+
+.button-sites:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.button-apps {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  border: none;
+  height: 50px;
+  width: 160px;
+}
+
+.button-apps:hover {
+  background-color: #00bc6c;
+}
+
+.button-apps:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #00aa62;
+}
+
+.button-present {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-gold);
+  border: none;
+  height: 50px;
+  width: 160px;
+}
+
+.button-present:hover {
+  background-color: #eab534;
+}
+
+.button-present:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5a722;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: center;
+  list-style: none;
+}
+
+.features-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.line {
+  border: none;
+  background-color: #eeeeee;
+  height: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about p:nth-child(3) {
+  font-weight: 700;
+}
+
+.description h2 {
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.descript-point {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.contact-phone {
+  color: var(--basic-dark-gray);
+  text-decoration: none;
+}
+
+.button-contact {
+  color: var(--basic-white);
+  text-decoration: none;
+  background-color: var(--basic-red);
+}
