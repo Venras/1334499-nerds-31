@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-<header>
-  <nav>
-    <a>
-      <img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип компании">
-    </a>
-    <ul>
-     <li><a href="blank.html">Студия</a></li>
-     <li><a href="blank.html">Клиенты</a></li>
-     <li><a href="catalog.html">Магазин</a></li>
-     <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <a href="blank.html">Корзина</a>
-  </nav>
-</header>
-<main>
-  <h1>Всякая всячина v 1</h1>
-  <p>Всякая всячина v 1.1</p>
-</main>
-<footer>
-  <h2>Давайте дружить, это выгодно!</h2>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
-  <ul>
-    <li>
-      <a href="#">Вконтакте</a>
-    </li>
-    <li>
-      <a href="#">Фэйсбук</a>
-    </li>
-    <li>
-      <a href="#">Инстаграм</a>
-    </li>
-  </ul>
-</footer>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <nav class="header-wrapper wrapper-content">
+      <a href="index.html" class="header-logo-nav">
+        <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип Нердс">
+      </a>
+      <ul class="header-site-nav">
+        <li><a class="header-site-nav-link" href="blank.html">Студия</a></li>
+        <li><a class="header-site-nav-link" href="blank.html">Клиенты</a></li>
+        <li><a class="header-site-nav-link" href="catalog.html">Магазин</a></li>
+        <li><a class="header-site-nav-link" href="blank.html">Контакты</a></li>
+      </ul>
+      <ul class="header-cart-nav">
+        <li class="cart">
+          <a class="header-cart-nav-link" href="blank.html">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="blank">
+      <h1>Страница в разработке</h1>
+      <p>Приносим извинения за доставленые неудобства</p>
+    </div>
+  </main>
+  <footer class="wrapper-content footer">
+    <div class="footer-social">
+      <ul>
+        <li><a class="vk-icon" href="#" aria-label="Вконтакте"></a></li>
+        <li><a class="fb-icon" href="#" aria-label="Фейсбук"></a></li>
+        <li><a class="in-icon" href="#" aria-label="Инстаграм"></a></li>
+      </ul>
+      <div class="footer-discount">
+        <b>Давайте дружить, это выгодно!</b>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </div>
+  </footer>

@@ -13,11 +13,13 @@
 </head>
 
 <body class="page-body">
+  <h1 class="visually-hidden">Проект</h1>
   <header class="main-header">
     <nav class="header-wrapper wrapper-content">
-      <a class="header-logo-nav">
+      <h2 class="visually-hidden">Навигация</h2>
+      <div class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип Нердс">
-      </a>
+      </div>
       <ul class="header-site-nav">
         <li><a class="header-site-nav-link" href="blank.html">Студия</a></li>
         <li><a class="header-site-nav-link" href="blank.html">Клиенты</a></li>
@@ -26,7 +28,7 @@
       </ul>
       <ul class="header-cart-nav">
         <li class="cart">
-          <a class="header-cart-nav-link" href="#">Корзина</a>
+          <a class="header-cart-nav-link" href="blank.html">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +38,7 @@
 
     <section class="slider">
       <div class="wrapper-content">
-        <h1 class="visually-hidden">Преимущества</h1>
+        <h2 class="visually-hidden">Преимущества</h2>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -163,32 +165,32 @@
       <ul class="brands-list">
         <li class="brands-item">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/client_html.jpg" width="199" height="68" alt="Логотип HTML Academy">
+            <img src="img/logo_htmlacademy2.svg" width="199" height="68" alt="Логотип HTML Academy">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/client_borodinski.jpg" width="209" height="90" alt="Логотип Barbershop Borodinsky">
+            <img src="img/logo-22.jpg" width="209" height="90" alt="Логотип Barbershop Borodinsky">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/client_pink.jpg" width="185" height="52" alt="Логотип Pink">
+            <img src="img/logo-32.jpg" width="185" height="52" alt="Логотип Pink">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/client_mishka.jpg" width="173" height="84" alt="Логотип Mishka">
+            <img src="img/logo-42.jpg" width="173" height="84" alt="Логотип Mishka">
           </a>
         </li>
       </ul>
     </section>
 
     <div class="map-wrapper">
-      <a
-        href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.317576%2C59.968261&z=17">
-        <img src="img/Group13.png" width="1440" height="416" alt="Расположение на карте">
-      </a>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7eb9c32739519adb431a8d51a4a0f129369e16f880bd85de5e465baf6cacc676&amp;source=constructor"
+        width="1440" height="417">
+      </iframe>
 
 
       <section class="map-container wrapper-content">
@@ -198,10 +200,10 @@
           <div class="address">
             наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург
             <p class="address-phone">
-              <a class="address-phone-link" href="tel.:78005558628">+7 800 555-86-28</a>
+              <a class="address-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
             </p>
-            <a href="writeus.html" class="button writeus-button send-us-form-button send-us-popup-button">Напишите
-              нам</a>
+            <button class="button writeus-button send-us-form-button send-us-popup-button">Напишите
+              нам</button>
           </div>
         </div>
       </section>
@@ -243,6 +245,8 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/script.js"></script>
 
 </body>
 

@@ -13,8 +13,10 @@
 </head>
 
 <body class="page-body">
+  <h1 class="visually-hidden">Проект</h1>
   <header class="main-header">
     <nav class="header-wrapper wrapper-content">
+      <h2 class="visually-hidden">Навигация</h2>
       <a href="index.html" class="header-logo-nav">
         <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип Нердс">
       </a>
@@ -35,14 +37,14 @@
   <main>
     <section class="intro">
       <div class="wrapper-content">
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <h2 class="page-title">Магазин готовых шаблонов</h2>
       </div>
     </section>
 
     <div class="catalog wrapper-content">
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтрация</h2>
-        <form action="https://echo.htmlacademy.ru" method="post"></form>
+        <form class="form" action="https://echo.htmlacademy.ru" method="get"></form>
 
         <fieldset class="filter-item">
           <legend>Стоимость:</legend>
@@ -57,10 +59,10 @@
             </div>
             <div class="price-controls">
               <label class="min-price">от
-                <input name="min-price" type="text" value="0">
+                <input name="min-price" type="number" value="0">
               </label>
               <label class="max-price">до
-                <input name="max-price" type="text" value="15000">
+                <input name="max-price" type="number" value="15000">
               </label>
             </div>
           </div>
@@ -253,10 +255,9 @@
     </div>
 
     <div class="map-wrapper">
-      <a
-        href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?ll=30.317576%2C59.968261&z=17">
-        <img src="img/Group13.png" width="1440" height="416" alt="Расположение на карте">
-      </a>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7eb9c32739519adb431a8d51a4a0f129369e16f880bd85de5e465baf6cacc676&amp;source=constructor"
+        width="1440" height="417"></iframe>
 
       <section class="map-container wrapper-content">
         <div class="map-address">
@@ -265,14 +266,13 @@
           <div class="address">
             наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург
             <p class="address-phone">
-              <a class="address-phone-link" href="tel.:78005558628">+7 800 555-86-28</a>
+              <a class="address-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
             </p>
-            <a href="writeus.html" class="button writeus-button send-us-form-button send-us-popup-button">Напишите
-              нам</a>
+            <button class="button writeus-button send-us-form-button send-us-popup-button">Напишите
+              нам</button>
           </div>
         </div>
       </section>
-
     </div>
   </main>
 
@@ -317,6 +317,8 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/script.js"></script>
 
 </body>
 
