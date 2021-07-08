@@ -162,115 +162,116 @@
 
 .slider {
   position: relative;
-  background-color: #eee;
-}
-
-.slider-controls {
-  font-size: 0;
-  position: absolute;
-  z-index: 100;
-  bottom: 104px;
-  left: 50%;
-  width: 160px;
-  height: 18px;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.slider-controls label {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  cursor: pointer;
-  vertical-align: top;
-  border-radius: 50%;
-}
-
-.slider-controls label::after {
-  position: absolute;
-  z-index: 1;
-  top: 8px;
-  left: 8px;
-  width: 18px;
-  height: 18px;
-  content: "";
-  border-radius: 50%;
-  background: #fff;
+  background-color: #eee
 }
 
 .slider-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: grid;
+  margin: auto;
+  padding: auto;
+  list-style: none
 }
 
-.slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
+.slider-list-item {
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
-.slider-item:nth-child(1) {
-  background-image: url(../img/nerds-index-slide11.png);
-  background-repeat: no-repeat;
-  background-position: 99% 0px;
-}
-
-.slider-item:nth-child(2) {
-  background-image: url(../img/nerds-index-slide21.png);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-}
-
-.slider-item:nth-child(3) {
-  background-image: url(../img/nerds-index-slide31.png);
-  background-repeat: no-repeat;
-  background-position: 100% 20px;
-}
-
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
-  display: block;
-}
-
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
-  display: block;
-}
-
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
-  display: block;
-}
-
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+.slider-controls {
   position: absolute;
-  z-index: 2;
-  top: 50%;
+  z-index: 10;
   left: 50%;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  content: "";
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-  background-color: inherit;
+  bottom: 96px;
+  transform: translateX(-50%)
 }
 
-.slider-item h2 {
+.slide {
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 430px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat
+}
+
+.slide:nth-child(1) {
+  margin-right: 694px;
+  background-image: url(../img/nerds-index-slide11.png)
+}
+
+.slide:nth-child(2) {
+  display: none;
+  margin-right: 694px;
+  background-image: url(../img/nerds-index-slide21.png)
+}
+
+.slide:nth-child(3) {
+  display: none;
+  margin-right: 694px;
+  background-image: url(../img/nerds-index-slide31.png)
+}
+
+.slide-content {
+  margin-left: 650px;
+  width: 560px
+}
+
+.slide-title {
+  margin-top: 16px;
+  margin-bottom: 26px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
-  color: #000;
+  color: #000
 }
 
-.slider-item p {
-  max-width: 430px;
-  margin: 0;
-  margin-bottom: 38px;
+.slide-description {
+  margin-top: 16px;
+  margin-bottom: 16px
+}
+
+.slide-button {
+  margin-top: 24px;
+  padding: 16px 54px
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 18px
+}
+
+.slider-controls-button {
+  margin-left: 9px;
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: 0
+}
+
+.slider-controls-button:focus {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, .2)
+}
+
+.slider-controls-button--current {
+  position: relative
+}
+
+.slider-controls-button--current::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%
 }
 
 .button {
