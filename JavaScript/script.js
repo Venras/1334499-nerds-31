@@ -50,3 +50,24 @@ popup.addEventListener("click", function (e) {
         (modal.classList.remove("modal-show"),
         modal.classList.remove("modal-error")));
   });
+
+const sliders = document.querySelectorAll(".slide");
+const slidersButtons = document.querySelectorAll(".slider-controls-button");
+
+// console.log("### sliders: ", sliders);
+// console.log("### buttons: ", slidersButton);
+
+slidersButtons.forEach((button, index) => {
+  // console.log("### button: ", button);
+  // console.log("### index: ", index);
+  button.addEventListener("click", (e) => {
+    sliders.forEach((slide) => {
+      slide.classList.remove("slide-active");
+    });
+    sliders[index].classList.add("slide-active");
+    slidersButtons.forEach((btn) => {
+      btn.classList.remove("slider-controls-button--current");
+    });
+    e.target.classList.add("slider-controls-button--current");
+  });
+});
